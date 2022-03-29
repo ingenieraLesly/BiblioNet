@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "BiblioNetAPP/1.0.0": {
+        "runtime": {
+          "BiblioNetAPP.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BiblioNetAPP/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

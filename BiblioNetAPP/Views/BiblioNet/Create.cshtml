@@ -1,0 +1,26 @@
+﻿@model BiblioNet
+@{
+    ViewData["Title"] = "Biblio NET";
+}
+<h1>Register Book</h1>
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+<form asp-action="Create">
+    @*para dar acción al botón llamado Create.*@
+    <div class="mb-3">
+        <label asp-for="BookName" class="form-label"></label>
+        <input type="text" asp-for="BookName" class="form-control" />@*tipo texto para que reciba el name*@
+        <span asp-validation-for="BookName" class="text-danger"></span>@*para mostrar un error relacionado con el input Name*@
+    </div>
+        <div class="mb-3">
+        <label asp-for="Author" class="form-label"></label>
+        <input type="text" asp-for="Author" class="form-control" />@*tipo texto para que reciba el name*@
+        <span asp-validation-for="Author" class="text-danger"></span>@*para mostrar un error relacionado con el input Name*@
+    </div>
+    <div class="mb-3">
+        <label asp-for="Price" class="form-label"></label>
+        <input type="text" asp-for="Price" class="form-control" />@*tipo texto para que reciba el name*@
+        <span asp-validation-for="Price" class="text-danger"></span>@*para mostrar un error relacionado con el input Name*@
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>
